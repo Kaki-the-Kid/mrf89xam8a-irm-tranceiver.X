@@ -1,4 +1,4 @@
-# 1 "lib_eeprom/eeprom_lib.c"
+# 1 "lib_subghz/subghz_lib.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,17 +6,9 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "lib_eeprom/eeprom_lib.c" 2
-
-
-
-
-
-
-
-
-# 1 "lib_eeprom/../mcc_generated_files/mcc.h" 1
-# 49 "lib_eeprom/../mcc_generated_files/mcc.h"
+# 1 "lib_subghz/subghz_lib.c" 2
+# 1 "lib_subghz/../mcc_generated_files/mcc.h" 1
+# 49 "lib_subghz/../mcc_generated_files/mcc.h"
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -9137,17 +9129,17 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 49 "lib_eeprom/../mcc_generated_files/mcc.h" 2
+# 49 "lib_subghz/../mcc_generated_files/mcc.h" 2
 
-# 1 "lib_eeprom/../mcc_generated_files/device_config.h" 1
-# 50 "lib_eeprom/../mcc_generated_files/mcc.h" 2
+# 1 "lib_subghz/../mcc_generated_files/device_config.h" 1
+# 50 "lib_subghz/../mcc_generated_files/mcc.h" 2
 
-# 1 "lib_eeprom/../mcc_generated_files/pin_manager.h" 1
-# 98 "lib_eeprom/../mcc_generated_files/pin_manager.h"
+# 1 "lib_subghz/../mcc_generated_files/pin_manager.h" 1
+# 98 "lib_subghz/../mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 110 "lib_eeprom/../mcc_generated_files/pin_manager.h"
+# 110 "lib_subghz/../mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 51 "lib_eeprom/../mcc_generated_files/mcc.h" 2
+# 51 "lib_subghz/../mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdint.h" 3
@@ -9234,10 +9226,10 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "lib_eeprom/../mcc_generated_files/mcc.h" 2
+# 52 "lib_subghz/../mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "lib_eeprom/../mcc_generated_files/mcc.h" 2
+# 53 "lib_subghz/../mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\conio.h" 1 3
 
@@ -9270,15 +9262,15 @@ extern __bit kbhit(void);
 
 extern char * cgets(char *);
 extern void cputs(const char *);
-# 54 "lib_eeprom/../mcc_generated_files/mcc.h" 2
+# 54 "lib_subghz/../mcc_generated_files/mcc.h" 2
 
-# 1 "lib_eeprom/../mcc_generated_files/interrupt_manager.h" 1
-# 110 "lib_eeprom/../mcc_generated_files/interrupt_manager.h"
+# 1 "lib_subghz/../mcc_generated_files/interrupt_manager.h" 1
+# 110 "lib_subghz/../mcc_generated_files/interrupt_manager.h"
 void INTERRUPT_Initialize (void);
-# 55 "lib_eeprom/../mcc_generated_files/mcc.h" 2
+# 55 "lib_subghz/../mcc_generated_files/mcc.h" 2
 
-# 1 "lib_eeprom/../mcc_generated_files/eusart1.h" 1
-# 57 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 1 "lib_subghz/../mcc_generated_files/eusart1.h" 1
+# 57 "lib_subghz/../mcc_generated_files/eusart1.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -9417,8 +9409,8 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 57 "lib_eeprom/../mcc_generated_files/eusart1.h" 2
-# 76 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 57 "lib_subghz/../mcc_generated_files/eusart1.h" 2
+# 76 "lib_subghz/../mcc_generated_files/eusart1.h"
 typedef union {
     struct {
         unsigned perr : 1;
@@ -9440,40 +9432,40 @@ extern volatile uint8_t eusart1RxCount;
 
 extern void (*EUSART1_TxDefaultInterruptHandler)(void);
 extern void (*EUSART1_RxDefaultInterruptHandler)(void);
-# 118 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 118 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_Initialize(void);
-# 166 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 166 "lib_subghz/../mcc_generated_files/eusart1.h"
 _Bool EUSART1_is_tx_ready(void);
-# 214 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 214 "lib_subghz/../mcc_generated_files/eusart1.h"
 _Bool EUSART1_is_rx_ready(void);
-# 261 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 261 "lib_subghz/../mcc_generated_files/eusart1.h"
 _Bool EUSART1_is_tx_done(void);
-# 309 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 309 "lib_subghz/../mcc_generated_files/eusart1.h"
 eusart1_status_t EUSART1_get_last_status(void);
-# 329 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 329 "lib_subghz/../mcc_generated_files/eusart1.h"
 uint8_t EUSART1_Read(void);
-# 349 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 349 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_Write(uint8_t txData);
-# 370 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 370 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_Transmit_ISR(void);
-# 391 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 391 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_Receive_ISR(void);
-# 412 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 412 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_RxDataHandler(void);
-# 430 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 430 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 448 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 448 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 466 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 466 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
-# 486 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 486 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void));
-# 506 "lib_eeprom/../mcc_generated_files/eusart1.h"
+# 506 "lib_subghz/../mcc_generated_files/eusart1.h"
 void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 56 "lib_eeprom/../mcc_generated_files/mcc.h" 2
-# 71 "lib_eeprom/../mcc_generated_files/mcc.h"
+# 56 "lib_subghz/../mcc_generated_files/mcc.h" 2
+# 71 "lib_subghz/../mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 84 "lib_eeprom/../mcc_generated_files/mcc.h"
+# 84 "lib_subghz/../mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 9 "lib_eeprom/eeprom_lib.c" 2
+# 1 "lib_subghz/subghz_lib.c" 2
 
