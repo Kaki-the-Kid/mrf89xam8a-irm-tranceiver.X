@@ -46,3 +46,6 @@ Sub-GHz Transceiver Module
 * 64-byte transmit/receive FIFO with preload in stand-by mode
 * Supports Manchester encoding/decoding techniques
 
+### Pinout
+<img src="https://github.com/Kaki-the-Kid/mrf89xam8a-irm-tranceiver.X/blob/master/dokumentation/dokument%20billeder/Pinout.png" />
+
