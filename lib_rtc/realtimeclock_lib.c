@@ -1,4 +1,4 @@
-#include "mcc_generated_files/mcc.h"
+#include "../mcc_generated_files/mcc.h"
 
 /* 
  * Registre i Real-time clock

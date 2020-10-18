@@ -17,6 +17,36 @@
         <itemPath>mcc_generated_files/eusart2.h</itemPath>
       </logicalFolder>
     </logicalFolder>
+    <logicalFolder name="lib_eeprom" displayName="lib_eeprom" projectFiles="true">
+      <itemPath>lib_eeprom/eeprom_lib.c</itemPath>
+      <itemPath>lib_eeprom/eeprom_lib.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="lib_esp01" displayName="lib_esp01" projectFiles="true">
+      <itemPath>lib_esp01/esp01_access_point.c</itemPath>
+      <itemPath>lib_esp01/esp01_client_lib.c</itemPath>
+      <itemPath>lib_esp01/esp01_server_lib.c</itemPath>
+      <itemPath>lib_esp01/esp01_access_point.h</itemPath>
+      <itemPath>lib_esp01/esp01_client_lib.h</itemPath>
+      <itemPath>lib_esp01/esp01_server_lib.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="lib_i2c" displayName="lib_i2c" projectFiles="true">
+      <itemPath>lib_i2c/i2c_lib.c</itemPath>
+      <itemPath>lib_i2c/i2c_lib.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="lib_rtc" displayName="lib_rtc" projectFiles="true">
+      <itemPath>lib_rtc/realtimeclock_lib.c</itemPath>
+      <itemPath>lib_rtc/realtimeclock_lib.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="lib_spi" displayName="lib_spi" projectFiles="true">
+      <itemPath>lib_spi/spi_lib.c</itemPath>
+      <itemPath>lib_spi/spi_lib.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="lib_subghz" displayName="lib_subghz" projectFiles="true">
+      <itemPath>lib_subghz/mrf89xamba.c</itemPath>
+      <itemPath>lib_subghz/subghz_lib.c</itemPath>
+      <itemPath>lib_subghz/mrf89xamba.h</itemPath>
+      <itemPath>lib_subghz/subghz_lib.h</itemPath>
+    </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
@@ -30,6 +60,8 @@
         <itemPath>mcc_generated_files/device_config.c</itemPath>
         <itemPath>mcc_generated_files/mcc.c</itemPath>
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
+        <itemPath>mcc_generated_files/eusart1.c</itemPath>
+        <itemPath>mcc_generated_files/interrupt_manager.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>
@@ -40,6 +72,14 @@
       <itemPath>MyConfig.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>lib_esp01</Elem>
+    <Elem>lib_eeprom</Elem>
+    <Elem>lib_i2c</Elem>
+    <Elem>lib_rtc</Elem>
+    <Elem>lib_spi</Elem>
+    <Elem>lib_subghz</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
@@ -48,13 +88,13 @@
         <targetDevice>PIC18F26K22</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>pk4hybrid</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.30</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18F-K_DFP" vendor="Microchip" version="1.0.48"/>
+        <pack name="PIC18F-K_DFP" vendor="Microchip" version="1.4.87"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -85,6 +125,7 @@
       <HI-TECH-COMP>
         <property key="additional-warnings" value="true"/>
         <property key="asmlist" value="true"/>
+        <property key="call-prologues" value="false"/>
         <property key="default-bitfield-type" value="true"/>
         <property key="default-char-type" value="true"/>
         <property key="define-macros" value=""/>
@@ -161,12 +202,16 @@
         <property key="program-the-device-with-default-config-words" value="true"/>
         <property key="remove-unused-sections" value="true"/>
       </HI-TECH-LINK>
+      <XC8-CO>
+        <property key="coverage-enable" value=""/>
+      </XC8-CO>
       <XC8-config-global>
         <property key="advanced-elf" value="true"/>
         <property key="gcc-opt-driver-new" value="true"/>
         <property key="gcc-opt-std" value="-std=c99"/>
         <property key="gcc-output-file-format" value="dwarf-3"/>
         <property key="omit-pack-options" value="false"/>
+        <property key="omit-pack-options-new" value="1"/>
         <property key="output-file-format" value="-mcof,+elf"/>
         <property key="stack-size-high" value="auto"/>
         <property key="stack-size-low" value="auto"/>
@@ -182,8 +227,12 @@
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UpdateOptions"
                   value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
+        <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface"
                   value="${communication.interface.default}"/>
+        <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="${communication.speed.default}"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="memories.aux" value="false"/>
@@ -200,6 +249,7 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-ffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoImageName" value="mrf89xam8a-irm-tranceiver_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>
@@ -210,6 +260,8 @@
         <property key="programoptions.pgmentry.voltage" value="high"/>
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value="0-3ff"/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -218,6 +270,13 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="programoptionsedbg.eraseb4program" value="true"/>
+        <property key="ptgProgramImage" value="true"/>
+        <property key="ptgSendImage" value="true"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value="5.0"/>
       </pk4hybrid>
     </conf>

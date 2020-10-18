@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/mcc.c"
+# 1 "lib_rtc/realtimeclock_lib.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,9 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/mcc.c" 2
-# 47 "mcc_generated_files/mcc.c"
-# 1 "mcc_generated_files/mcc.h" 1
-# 49 "mcc_generated_files/mcc.h"
+# 1 "lib_rtc/realtimeclock_lib.c" 2
+# 1 "lib_rtc/../mcc_generated_files/mcc.h" 1
+# 49 "lib_rtc/../mcc_generated_files/mcc.h"
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -9130,17 +9129,17 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 49 "mcc_generated_files/mcc.h" 2
+# 49 "lib_rtc/../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/device_config.h" 1
-# 50 "mcc_generated_files/mcc.h" 2
+# 1 "lib_rtc/../mcc_generated_files/device_config.h" 1
+# 50 "lib_rtc/../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/pin_manager.h" 1
-# 78 "mcc_generated_files/pin_manager.h"
+# 1 "lib_rtc/../mcc_generated_files/pin_manager.h" 1
+# 78 "lib_rtc/../mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 90 "mcc_generated_files/pin_manager.h"
+# 90 "lib_rtc/../mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 51 "mcc_generated_files/mcc.h" 2
+# 51 "lib_rtc/../mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdint.h" 3
@@ -9227,18 +9226,18 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "mcc_generated_files/mcc.h" 2
+# 52 "lib_rtc/../mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "mcc_generated_files/mcc.h" 2
+# 53 "lib_rtc/../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/interrupt_manager.h" 1
-# 110 "mcc_generated_files/interrupt_manager.h"
+# 1 "lib_rtc/../mcc_generated_files/interrupt_manager.h" 1
+# 110 "lib_rtc/../mcc_generated_files/interrupt_manager.h"
 void INTERRUPT_Initialize (void);
-# 54 "mcc_generated_files/mcc.h" 2
+# 54 "lib_rtc/../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/eusart1.h" 1
-# 57 "mcc_generated_files/eusart1.h"
+# 1 "lib_rtc/../mcc_generated_files/eusart1.h" 1
+# 57 "lib_rtc/../mcc_generated_files/eusart1.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -9377,8 +9376,8 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 57 "mcc_generated_files/eusart1.h" 2
-# 76 "mcc_generated_files/eusart1.h"
+# 57 "lib_rtc/../mcc_generated_files/eusart1.h" 2
+# 76 "lib_rtc/../mcc_generated_files/eusart1.h"
 typedef union {
     struct {
         unsigned perr : 1;
@@ -9400,64 +9399,125 @@ extern volatile uint8_t eusart1RxCount;
 
 extern void (*EUSART1_TxDefaultInterruptHandler)(void);
 extern void (*EUSART1_RxDefaultInterruptHandler)(void);
-# 118 "mcc_generated_files/eusart1.h"
+# 118 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_Initialize(void);
-# 166 "mcc_generated_files/eusart1.h"
+# 166 "lib_rtc/../mcc_generated_files/eusart1.h"
 _Bool EUSART1_is_tx_ready(void);
-# 214 "mcc_generated_files/eusart1.h"
+# 214 "lib_rtc/../mcc_generated_files/eusart1.h"
 _Bool EUSART1_is_rx_ready(void);
-# 261 "mcc_generated_files/eusart1.h"
+# 261 "lib_rtc/../mcc_generated_files/eusart1.h"
 _Bool EUSART1_is_tx_done(void);
-# 309 "mcc_generated_files/eusart1.h"
+# 309 "lib_rtc/../mcc_generated_files/eusart1.h"
 eusart1_status_t EUSART1_get_last_status(void);
-# 329 "mcc_generated_files/eusart1.h"
+# 329 "lib_rtc/../mcc_generated_files/eusart1.h"
 uint8_t EUSART1_Read(void);
-# 349 "mcc_generated_files/eusart1.h"
+# 349 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_Write(uint8_t txData);
-# 370 "mcc_generated_files/eusart1.h"
+# 370 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_Transmit_ISR(void);
-# 391 "mcc_generated_files/eusart1.h"
+# 391 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_Receive_ISR(void);
-# 412 "mcc_generated_files/eusart1.h"
+# 412 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_RxDataHandler(void);
-# 430 "mcc_generated_files/eusart1.h"
+# 430 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 448 "mcc_generated_files/eusart1.h"
+# 448 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 466 "mcc_generated_files/eusart1.h"
+# 466 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
-# 486 "mcc_generated_files/eusart1.h"
+# 486 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void));
-# 506 "mcc_generated_files/eusart1.h"
+# 506 "lib_rtc/../mcc_generated_files/eusart1.h"
 void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 55 "mcc_generated_files/mcc.h" 2
-# 70 "mcc_generated_files/mcc.h"
+# 55 "lib_rtc/../mcc_generated_files/mcc.h" 2
+# 70 "lib_rtc/../mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "mcc_generated_files/mcc.h"
+# 83 "lib_rtc/../mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 47 "mcc_generated_files/mcc.c" 2
+# 1 "lib_rtc/realtimeclock_lib.c" 2
+# 25 "lib_rtc/realtimeclock_lib.c"
+uint8_t _clockData[] {0x00, 0x01, 0x2, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0E, 0x0F};
 
 
+uint8_t _clockDataString[] = {"hh:mm:ss - "};
+# 38 "lib_rtc/realtimeclock_lib.c"
+uint8_t getTimeAll(void) {
 
-void SYSTEM_Initialize(void)
-{
 
-    INTERRUPT_Initialize();
-    PIN_MANAGER_Initialize();
-    OSCILLATOR_Initialize();
-    EUSART1_Initialize();
 }
 
-void OSCILLATOR_Initialize(void)
-{
+void setTimeAll(void) {}
 
-    OSCCON = 0x70;
+uint8_t convertBCD2Bytes(uint8_t bcdByte) {}
 
-    OSCCON2 = 0x04;
+uint8_t convertBytes2BCD(uint8_t *bytesPtr) {}
 
-    OSCTUNE = 0x40;
+void testRealTimeClockStart(void) {}
 
-    while(PLLRDY == 0)
-    {
-    }
-}
+void testRealTimeClockStop(void) {}
+
+void getSeconds(void) {}
+
+void setSeconds(void) {}
+
+void setMinutes(void) {}
+
+void getMinutes(void) {}
+
+void getHour(void) {}
+
+void setHour(void) {}
+
+void getAMPM(void) {}
+
+void setAMPM(void) {}
+
+void getDay(void) {}
+
+void setDay(uint8_t data) {}
+
+void getMonth(void) {}
+
+void setMonth(void) {}
+
+void getYear(void) {}
+
+void setYear(void) {}
+
+
+
+
+void setAlarm1(void) {}
+
+void getAlarm1Seconds(void) {}
+
+void setAlarm1Seconds(void) {}
+
+void getAlarm1Minutes(void) {}
+
+void setAlarm1Minutes(void) {}
+
+void getAlarm1Hours(void) {}
+
+void setAlarm1Hours(void) {}
+
+void setAlarm1AMPM(void) {}
+
+
+
+
+void setAlarm2(void) {}
+
+void getAlarm2Seconds(void) {}
+
+void setAlarm2Seconds(void) {}
+
+void getAlarm2Minutes(void) {}
+
+void setAlarm2Minutes(void) {}
+
+void getAlarm2Hours(void) {}
+
+void setAlarm2Hours(void) {}
+
+void setAlarm2AMPM(void) {}

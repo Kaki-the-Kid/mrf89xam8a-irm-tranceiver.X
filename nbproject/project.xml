@@ -12,7 +12,14 @@
             <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>lib_esp01</sourceRootElem>
+                <sourceRootElem>lib_eeprom</sourceRootElem>
+                <sourceRootElem>lib_i2c</sourceRootElem>
+                <sourceRootElem>lib_rtc</sourceRootElem>
+                <sourceRootElem>lib_spi</sourceRootElem>
+                <sourceRootElem>lib_subghz</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>default</name>

@@ -6,5 +6,5 @@
  * man skriver de rå data fra termostaten og sørger for at de 
  */
 
-#include "mcc_generated_files/mcc.h"
+#include "../mcc_generated_files/mcc.h"
 uint8_t STATUS = 0;
