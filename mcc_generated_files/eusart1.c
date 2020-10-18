@@ -13,12 +13,12 @@
   @Description
     This source file provides APIs for EUSART1.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.77
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.3
         Device            :  PIC18F26K22
         Driver Version    :  2.1.0
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.05 and above
-        MPLAB 	          :  MPLAB X 5.20
+        Compiler          :  XC8 2.20 and above
+        MPLAB 	          :  MPLAB X 5.40
 */
 
 /*
@@ -97,17 +97,17 @@ void EUSART1_Initialize(void)
     // ABDOVF no_overflow; CKTXP async_noninverted_sync_fallingedge; BRG16 16bit_generator; WUE disabled; ABDEN disabled; DTRXP not_inverted; 
     BAUDCON1 = 0x08;
 
-    // SPEN enabled; RX9 8-bit; CREN disabled; ADDEN disabled; SREN disabled; 
-    RCSTA1 = 0x80;
+    // SPEN enabled; RX9 8-bit; CREN enabled; ADDEN disabled; SREN disabled; 
+    RCSTA1 = 0x90;
 
-    // TX9 8-bit; TX9D 0; SENDB sync_break_complete; TXEN disabled; SYNC asynchronous; BRGH hi_speed; CSRC slave_mode; 
-    TXSTA1 = 0x04;
-
-    // 
-    SPBRG1 = 0x8A;
+    // TX9 8-bit; TX9D 0; SENDB sync_break_complete; TXEN enabled; SYNC asynchronous; BRGH hi_speed; CSRC slave_mode; 
+    TXSTA1 = 0x24;
 
     // 
-    SPBRGH1 = 0x00;
+    SPBRG1 = 0x15;
+
+    // 
+    SPBRGH1 = 0x01;
 
 
     EUSART1_SetFramingErrorHandler(EUSART1_DefaultFramingErrorHandler);

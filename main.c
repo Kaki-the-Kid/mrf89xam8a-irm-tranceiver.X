@@ -13,7 +13,7 @@
   Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.77
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.3
         Device            :  PIC18F26K22
         Driver Version    :  2.00
 */
@@ -41,22 +41,7 @@
     SOFTWARE.
 */
 
-#include "xc.h"
 #include "mcc_generated_files/mcc.h"
-
-#include "string.h"
-#include "ctype.h"
-
-//
-//#include "esp01_access_point.h"
-//#include "esp01_server_lib.h"
-//#include "esp01_client_lib.h"
-
-// Protokoller til kommunikation med andre enheder I2C og SPI
-//#include "i2c_lib.h"
-
-
-//#include "realtimeclock_lib.h"
 
 /*
                          Main application
@@ -69,9 +54,19 @@ void main(void)
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
     // Use the following macros to:
-    INTERRUPT_GlobalInterruptEnable();
-    INTERRUPT_PeripheralInterruptEnable();
-    
+
+    // Enable the Global Interrupts
+    //INTERRUPT_GlobalInterruptEnable();
+
+    // Disable the Global Interrupts
+    //INTERRUPT_GlobalInterruptDisable();
+
+    // Enable the Peripheral Interrupts
+    //INTERRUPT_PeripheralInterruptEnable();
+
+    // Disable the Peripheral Interrupts
+    //INTERRUPT_PeripheralInterruptDisable();
+
     while (1)
     {
         // Add your application code

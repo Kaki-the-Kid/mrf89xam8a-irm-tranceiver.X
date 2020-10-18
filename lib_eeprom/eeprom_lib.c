@@ -7,4 +7,4 @@
  */
 
 #include "../mcc_generated_files/mcc.h"
-uint8_t STATUS = 0;
+//uint8_t STATUS = 0;

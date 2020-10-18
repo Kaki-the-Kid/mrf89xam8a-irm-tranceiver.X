@@ -10,11 +10,11 @@
         <itemPath>mcc_generated_files/device_config.h</itemPath>
         <itemPath>mcc_generated_files/pin_manager.h</itemPath>
         <itemPath>mcc_generated_files/mcc.h</itemPath>
-        <itemPath>mcc_generated_files/interrupt_manager.h</itemPath>
         <itemPath>mcc_generated_files/spi2.h</itemPath>
         <itemPath>mcc_generated_files/i2c1.h</itemPath>
-        <itemPath>mcc_generated_files/eusart1.h</itemPath>
         <itemPath>mcc_generated_files/eusart2.h</itemPath>
+        <itemPath>mcc_generated_files/interrupt_manager.h</itemPath>
+        <itemPath>mcc_generated_files/eusart1.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="lib_eeprom" displayName="lib_eeprom" projectFiles="true">

@@ -826,11 +826,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 68:     TRISB = 0xFF;
 [e = _TRISB -> -> 255 `i `uc ]
 "69
-[; ;mcc_generated_files/pin_manager.c: 69:     TRISC = 0xFF;
-[e = _TRISC -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 69:     TRISC = 0xBF;
+[e = _TRISC -> -> 191 `i `uc ]
 "74
-[; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0xFC;
-[e = _ANSELC -> -> 252 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0x3C;
+[e = _ANSELC -> -> 60 `i `uc ]
 "75
 [; ;mcc_generated_files/pin_manager.c: 75:     ANSELB = 0x3F;
 [e = _ANSELB -> -> 63 `i `uc ]

@@ -8,6 +8,8 @@
 # 2 "<built-in>" 2
 # 1 "main.c" 2
 # 44 "main.c"
+# 1 "./mcc_generated_files/mcc.h" 1
+# 49 "./mcc_generated_files/mcc.h"
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -9128,17 +9130,15 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 44 "main.c" 2
+# 49 "./mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/mcc.h" 1
-# 50 "./mcc_generated_files/mcc.h"
 # 1 "./mcc_generated_files/device_config.h" 1
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 78 "./mcc_generated_files/pin_manager.h"
+# 98 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 90 "./mcc_generated_files/pin_manager.h"
+# 110 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -9232,10 +9232,43 @@ typedef uint32_t uint_fast32_t;
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdbool.h" 1 3
 # 53 "./mcc_generated_files/mcc.h" 2
 
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\conio.h" 1 3
+
+
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\errno.h" 1 3
+# 12 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\errno.h" 3
+extern int errno;
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\conio.h" 2 3
+
+# 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\__null.h" 1 3
+# 9 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\conio.h" 2 3
+
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+
+
+extern char * cgets(char *);
+extern void cputs(const char *);
+# 54 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/interrupt_manager.h" 1
 # 110 "./mcc_generated_files/interrupt_manager.h"
 void INTERRUPT_Initialize (void);
-# 54 "./mcc_generated_files/mcc.h" 2
+# 55 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/eusart1.h" 1
 # 57 "./mcc_generated_files/eusart1.h"
@@ -9430,122 +9463,22 @@ void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
 void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void));
 # 506 "./mcc_generated_files/eusart1.h"
 void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 55 "./mcc_generated_files/mcc.h" 2
-# 70 "./mcc_generated_files/mcc.h"
+# 56 "./mcc_generated_files/mcc.h" 2
+# 71 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "./mcc_generated_files/mcc.h"
+# 84 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 45 "main.c" 2
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\string.h" 1 3
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\string.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 411 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct __locale_struct * locale_t;
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\string.h" 2 3
-
-
-void *memcpy (void *restrict, const void *restrict, size_t);
-void *memmove (void *, const void *, size_t);
-void *memset (void *, int, size_t);
-int memcmp (const void *, const void *, size_t);
-void *memchr (const void *, int, size_t);
-
-char *strcpy (char *restrict, const char *restrict);
-char *strncpy (char *restrict, const char *restrict, size_t);
-
-char *strcat (char *restrict, const char *restrict);
-char *strncat (char *restrict, const char *restrict, size_t);
-
-int strcmp (const char *, const char *);
-int strncmp (const char *, const char *, size_t);
-
-int strcoll (const char *, const char *);
-size_t strxfrm (char *restrict, const char *restrict, size_t);
-
-char *strchr (const char *, int);
-char *strrchr (const char *, int);
-
-size_t strcspn (const char *, const char *);
-size_t strspn (const char *, const char *);
-char *strpbrk (const char *, const char *);
-char *strstr (const char *, const char *);
-char *strtok (char *restrict, const char *restrict);
-
-size_t strlen (const char *);
-
-char *strerror (int);
-# 65 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\string.h" 3
-char *strtok_r (char *restrict, const char *restrict, char **restrict);
-int strerror_r (int, char *, size_t);
-char *stpcpy(char *restrict, const char *restrict);
-char *stpncpy(char *restrict, const char *restrict, size_t);
-size_t strnlen (const char *, size_t);
-char *strdup (const char *);
-char *strndup (const char *, size_t);
-char *strsignal(int);
-char *strerror_l (int, locale_t);
-int strcoll_l (const char *, const char *, locale_t);
-size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+# 44 "main.c" 2
 
 
 
 
-void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 47 "main.c" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\ctype.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\ctype.h" 3
-int isalnum(int);
-int isalpha(int);
-int isblank(int);
-int iscntrl(int);
-int isdigit(int);
-int isgraph(int);
-int islower(int);
-int isprint(int);
-int ispunct(int);
-int isspace(int);
-int isupper(int);
-int isxdigit(int);
-int tolower(int);
-int toupper(int);
-# 41 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\ctype.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 41 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\ctype.h" 2 3
-
-
-int isalnum_l(int, locale_t);
-int isalpha_l(int, locale_t);
-int isblank_l(int, locale_t);
-int iscntrl_l(int, locale_t);
-int isdigit_l(int, locale_t);
-int isgraph_l(int, locale_t);
-int islower_l(int, locale_t);
-int isprint_l(int, locale_t);
-int ispunct_l(int, locale_t);
-int isspace_l(int, locale_t);
-int isupper_l(int, locale_t);
-int isxdigit_l(int, locale_t);
-int tolower_l(int, locale_t);
-int toupper_l(int, locale_t);
-
-int isascii(int);
-int toascii(int);
-# 48 "main.c" 2
-# 64 "main.c"
 void main(void)
 {
 
     SYSTEM_Initialize();
-
-
-
-
-    (INTCONbits.GIE = 1);
-    (INTCONbits.PEIE = 1);
-
+# 70 "main.c"
     while (1)
     {
 

@@ -9136,9 +9136,9 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 78 "mcc_generated_files/pin_manager.h"
+# 98 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 90 "mcc_generated_files/pin_manager.h"
+# 110 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -9232,10 +9232,43 @@ typedef uint32_t uint_fast32_t;
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\stdbool.h" 1 3
 # 53 "mcc_generated_files/mcc.h" 2
 
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\conio.h" 1 3
+
+
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\errno.h" 1 3
+# 12 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\errno.h" 3
+extern int errno;
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\conio.h" 2 3
+
+# 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\__null.h" 1 3
+# 9 "C:\\Program Files\\Microchip\\xc8\\v2.30\\pic\\include\\c99\\conio.h" 2 3
+
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+
+
+extern char * cgets(char *);
+extern void cputs(const char *);
+# 54 "mcc_generated_files/mcc.h" 2
+
 # 1 "mcc_generated_files/interrupt_manager.h" 1
 # 110 "mcc_generated_files/interrupt_manager.h"
 void INTERRUPT_Initialize (void);
-# 54 "mcc_generated_files/mcc.h" 2
+# 55 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/eusart1.h" 1
 # 57 "mcc_generated_files/eusart1.h"
@@ -9430,10 +9463,10 @@ void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
 void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void));
 # 506 "mcc_generated_files/eusart1.h"
 void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 55 "mcc_generated_files/mcc.h" 2
-# 70 "mcc_generated_files/mcc.h"
+# 56 "mcc_generated_files/mcc.h" 2
+# 71 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "mcc_generated_files/mcc.h"
+# 84 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 47 "mcc_generated_files/mcc.c" 2
 
