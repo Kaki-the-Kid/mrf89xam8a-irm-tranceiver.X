@@ -8,6 +8,11 @@ https://github.com/x893/Microchip/tree/master/Microchip/Transceivers/MRF89XA
 RadioHead Packet Radio library for embedded microprocessors<br />
 https://www.airspayce.com/mikem/arduino/RadioHead/index.html
 
+6 The SPI module on the Microchip PIC24FJ series<br />
+https://www.the-single-individual.com/technology6.php
+
+
+
 ## MRF89XAM8A
 868 MHz Ultra-Low Power
 Sub-GHz Transceiver Module
