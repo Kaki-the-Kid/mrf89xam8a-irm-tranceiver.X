@@ -50,3 +50,5 @@ Sub-GHz Transceiver Module
 <img src="https://github.com/Kaki-the-Kid/mrf89xam8a-irm-tranceiver.X/blob/master/dokumentation/dokument%20billeder/Pinout.png" />
 
 ![image](https://user-images.githubusercontent.com/44589560/145670213-6f7034c5-42c6-434e-97ab-a2f5a0a53072.png)
+
+![image](https://user-images.githubusercontent.com/44589560/145670456-bd632054-62a3-4492-bf7f-d8405da3dbbd.png)
