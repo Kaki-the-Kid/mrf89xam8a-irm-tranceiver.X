@@ -5,6 +5,8 @@ This is a prototype project
 Soces used in development:<br />
 https://github.com/x893/Microchip/tree/master/Microchip/Transceivers/MRF89XA
 
+RadioHead Packet Radio library for embedded microprocessors<br />
+https://www.airspayce.com/mikem/arduino/RadioHead/index.html
 
 ## MRF89XAM8A
 868 MHz Ultra-Low Power
