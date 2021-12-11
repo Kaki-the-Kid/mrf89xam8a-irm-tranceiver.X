@@ -49,3 +49,4 @@ Sub-GHz Transceiver Module
 ### Pinout
 <img src="https://github.com/Kaki-the-Kid/mrf89xam8a-irm-tranceiver.X/blob/master/dokumentation/dokument%20billeder/Pinout.png" />
 
+![image](https://user-images.githubusercontent.com/44589560/145670213-6f7034c5-42c6-434e-97ab-a2f5a0a53072.png)
