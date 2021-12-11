@@ -1,4 +1,4 @@
-#include "../mcc_generated_files/mcc.h"
+#include "mcc_generated_files/mcc.h"
 
 /* 
  * Registre i Real-time clock
@@ -22,7 +22,7 @@
 // 0FH: |    OSF    | 0 | 0 | 0 | 0 | 0 | A2F | A1F |                       Funtion: Status, range: ?
 
 // Intern buffer som holder data, der er modtaget fra Real-time clock
-uint8_t _clockData[] = {0x00, 0x01, 0x2, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0E, 0x0F};
+uint8_t _clockData[] {0x00, 0x01, 0x2, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0E, 0x0F};
 
 // Formatteret ASCII tegn for værdierne
 uint8_t _clockDataString[] = {"hh:mm:ss - "}; //HH:MM:SS - 
@@ -36,14 +36,15 @@ uint8_t _clockDataString[] = {"hh:mm:ss - "}; //HH:MM:SS -
  * 0x0F bytes. Alle bytes er i BCD format, så de er nemme at konvertere
  */
 uint8_t getTimeAll(void) {
-    return 0;
+    
+
 }
 
 void setTimeAll(void) {}
 
-uint8_t convertBCD2Bytes(uint8_t bcdByte) { return 0; }
+uint8_t convertBCD2Bytes(uint8_t bcdByte) {}
 
-uint8_t convertBytes2BCD(uint8_t *bytesPtr) { return 0; }
+uint8_t convertBytes2BCD(uint8_t *bytesPtr) {}
 
 void testRealTimeClockStart(void) {}
 
