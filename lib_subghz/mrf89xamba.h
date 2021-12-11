@@ -12,39 +12,38 @@
 extern "C" {
 #endif
 
-// Defining registers from datasheat
-#define GCONREG    0x00
-#define DMODREG    0x01
-#define FDEVREG    0x02
-#define BRSREG     0x03
-#define FLTHREG    0x04
-#define FIFOCREG   0x05
-#define R1CREG     0x06
-#define P1CREG     0x07 
-#define S1CREG     0x08
-#define R2CREG     0x09
-#define P2CREG     0x0A
-#define S2CREG     0x0B 
-#define PACREG     0x0C 
-#define FTXRXIREG  0x0D
-#define FTPRIREG   0x0E
-#define RSTHIREG   0x0F
-#define FILCREG    0x10
-#define PFCREG     0x11
-#define SYNCREG    0x12
-#define RSTSREG    0x13 
-#define RSVREG     0x14
-#define OOKCREG    0x15
-#define SYNCV31REG 0x16 
-#define SYNCV23REG 0x17
-#define SYNCV15REG 0x18
-#define SYNCV07REG 0x19
-#define TXCONREG   0x1A
-#define CLKOREG    0x1B
-#define PLOADREG   0x1C
-#define NADDSREG   0x1D
-#define PKTCREG    0x1E
-#define FCRCREG    0x1F 
+0x00GCONREG
+0x01DMODREG
+0x02FDEVREG
+0x03 BRSREG
+0x04FLTHREG
+0x05FIFOCREG
+0x06R1CREG
+0x07 P1CREG
+0x08 S1CREG
+0x09R2CREG
+0x0AP2CREG
+0x0B S2CREG
+0x0C PACREG
+0x0DFTXRXIREG
+0x0EFTPRIREG
+0x0FRSTHIREG
+0x10FILCREG
+ 0x11PFCREG
+ 0x12SYNCREG
+ 0x13 RSTSREG
+ 0x14RSVREG
+ 0x15OOKCREG
+ 0x16 SYNCV31REG
+0x17SYNCV23REG
+ 0x18SYNCV15REG
+ 0x19SYNCV07REG
+ 0x1ATXCONREG
+ 0x1BCLKOREG
+ 0x1CPLOADREG
+ 0x1DNADDSREG
+ 0x1EPKTCREG
+ 0x1F FCRCREG
 
 
 #ifdef	__cplusplus
