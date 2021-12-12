@@ -21,12 +21,12 @@
          <string>class com.microchip.mcc.mcu8.modules.mssp.MSSP</string>
       </entry>
       <entry>
-         <string>RESET</string>
-         <string>class com.microchip.mcc.mcu8.systemManager.reset.RESET</string>
-      </entry>
-      <entry>
          <string>EUSART1</string>
          <string>class com.microchip.mcc.mcu8.modules.eusart.EUSART</string>
+      </entry>
+      <entry>
+         <string>RESET</string>
+         <string>class com.microchip.mcc.mcu8.systemManager.reset.RESET</string>
       </entry>
       <entry>
          <string>Interrupt Module</string>
@@ -3824,16 +3824,16 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>ab27cafefa100277424f1989e3db616140de8b039ba5f0b75e8cfb5b2e3fe9cd</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\mcc.h</file>
          <hash>922faf0118e0be0d632719b2c979618d4a8b7dcbfa615a7940212e3110262499</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>6b9363803d536ad71005a87bbf53f0c31638fe6eb82775827f6a697d94888364</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>ab27cafefa100277424f1989e3db616140de8b039ba5f0b75e8cfb5b2e3fe9cd</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\eusart1.h</file>
@@ -3848,28 +3848,28 @@
          <hash>f8704e070c66cef89ebd16b42bd6cf6eaacb669d44f767b4169ea973a5760466</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>ff41b565adc6b4e1b1c26ab272e38e5c1b4e6e749ac39bcf4291a36a3865101d</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\spi1.h</file>
          <hash>80338048da4bcb4b172b5e756c6dc75c1ab1c4b815b837924e57ccb9f98a3202</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>d2bbbc74966bd3422987c9709df41b4ce2491b29bd20f49f5e39c3416e8b3fa8</hash>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>ff41b565adc6b4e1b1c26ab272e38e5c1b4e6e749ac39bcf4291a36a3865101d</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\spi1.c</file>
          <hash>27bcb74523d2c3a0a016304621ddc86c213ba3ece91a038d0c01a5a65cdc9db1</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>f929287282be82e28d21277d6e26a412becd7225be01c48e7655ddf97e7ee3c6</hash>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>d2bbbc74966bd3422987c9709df41b4ce2491b29bd20f49f5e39c3416e8b3fa8</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
          <hash>f82fb39a3048d53313dd4aebc9ce8236379bf597d41ccad2b261fa84d4e457fe</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>f929287282be82e28d21277d6e26a412becd7225be01c48e7655ddf97e7ee3c6</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\eusart1.c</file>
