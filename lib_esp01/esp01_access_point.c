@@ -17,4 +17,3 @@
  * Der laves mulighed for at indstille uret fra en hjemmeside.
  */
 
-#include "mcc_generated_files/mcc.h"

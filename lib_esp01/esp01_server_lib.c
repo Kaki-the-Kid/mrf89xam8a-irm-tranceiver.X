@@ -5,7 +5,7 @@
  */
 
 
-#include "mcc_generated_files/mcc.h" // Ellers kløjs compiler og/eller IDE
+#include "../mcc_generated_files/mcc.h" // Ellers kløjs compiler og/eller IDE
 
 
 /*

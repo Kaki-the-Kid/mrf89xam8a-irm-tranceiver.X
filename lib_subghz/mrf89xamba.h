@@ -8,12 +8,8 @@
 #ifndef MRF89XAMBA_H
 #define	MRF89XAMBA_H
 
-#ifdef	__cplusplus
-extern "C" {
-#endif
 
 // Defining registers from datasheat
-
 #define GCONREG    0x00
 #define DMODREG    0x01
 #define FDEVREG    0x02
@@ -48,9 +44,6 @@ extern "C" {
 #define FCRCREG    0x1F 
 
 
-#ifdef	__cplusplus
-}
-#endif
 
 #endif	/* MRF89XAMBA_H */
 
